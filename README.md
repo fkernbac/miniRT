@@ -1,8 +1,8 @@
 # 42 miniRT Project
-This project is a selfcoded raytracer from [fkernbac](https://github.com/fkernbac) and [rbetz](https://github.com/Alphacharge).
-It's using the [glfw Lib](https://github.com/glfw/glfw), [MLX42 V2.3.0](https://github.com/codam-coding-college/MLX42/commit/bf5dd7085b403974dd2d4e1e217877a518fc8915) and my [libft Lib](https://github.com/Alphacharge/mylibft/releases/tag/v1.0.0).
+This project is a self-coded raytracer by [fkernbac](https://github.com/fkernbac) and [rbetz](https://github.com/Alphacharge).
+It uses the [glfw Lib](https://github.com/glfw/glfw), [MLX42 V2.3.0](https://github.com/codam-coding-college/MLX42/commit/bf5dd7085b403974dd2d4e1e217877a518fc8915) and rbetz' [libft Lib](https://github.com/Alphacharge/mylibft/releases/tag/v1.0.0).
 
-If you want the original school project with Norm then use [v1.0.0](https://github.com/Alphacharge/miniRT/releases/tag/v1.0.0).
+For the original school project with Norm compliance, refer to [v1.0.0](https://github.com/Alphacharge/miniRT/releases/tag/v1.0.0).
 
 You need to install 'cmake' and 'glfw3' manually!
 ## Installation
@@ -14,18 +14,18 @@ make
 ```
 
 ## Description
-It contains following objects:
+The raytracer supports the following objects:
 - Cameras
-- Ambientlights
-- Lights
+- Ambient Lights
+- Point Lights
 - Planes
 - Spheres
 - Cylinders
-- Rectangles
+- Cuboids
 
-Additionaly you can declare a * *Resolution* * in the scenefile.
+Additionally you can declare a **Resolution** in the scenefile.
 
-This raytracer is multithreaded, handles hard shadows as soft [shadows](https://www.peachpit.com/articles/article.aspx?p=486505&seqNum=6) also.
+This multithreaded raytracer handles hard shadows and introduces soft [shadows](https://www.peachpit.com/articles/article.aspx?p=486505&seqNum=6).
 
 You can declare all objects multiple times, expect resolution.
 ## Usage
@@ -41,5 +41,6 @@ Keyhooks:
 + E		Zoom in
 + Q		Zoom out
 
-(Moving depence on absolut axis)
+> [!NOTE]
+> Movement keys work based on the global coordinate system. Camera rotation doesn't matter!
 ## Pictures
